@@ -136,14 +136,28 @@ main {
     color: #757575;
 }
 
-/* currency and commissions table */
-.main-currency-table .main-commissions-table {
+/* main-tables-container */
+.main-tables-container {
+    display: flex;
+    height: auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scroll-snap-align: center;
     width: 70%;
     min-height: 235px;
     max-width: 500px;
-    height: 360px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
+}
+/* currency and commissions table */
+.main-currency-table {
+    scroll-snap-align: center;
+    margin: 0 20px 0;
+}
+.main-commissions-table {
+    scroll-snap-align: center;
+    margin: 0 20px 0;
 }
 .main-currency-table .currency-table--title {
     margin-bottom: 15px;
